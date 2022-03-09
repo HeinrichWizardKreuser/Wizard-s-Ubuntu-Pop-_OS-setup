@@ -1,0 +1,1 @@
+remove all .tdb files found in /home/wizard/.config/pulse/

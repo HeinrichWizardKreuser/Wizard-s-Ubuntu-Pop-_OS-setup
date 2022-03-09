@@ -1,0 +1,16 @@
+(env) wizard@pop-os:~/nelware/master/revtoolbox/backend$ sudo su postgres
+[sudo] password for wizard: 
+postgres@pop-os:/home/wizard/nelware/master/revtoolbox/backend$ psql
+psql (13.3 (Ubuntu 13.3-1.pgdg21.04+1))
+Type "help" for help.
+
+postgres=# drop database revtoolbox_test;
+DROP DATABASE
+postgres=# create database revtoolbox with owner wizard;
+CREATE DATABASE
+postgres=# \c revtoolbox
+You are now connected to database "revtoolbox" as user "postgres".
+revtoolbox=# create extension postgis;
+CREATE EXTENSION
+revtoolbox=# 
+
