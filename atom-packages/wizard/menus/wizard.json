@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle wizard",
+        "command": "wizard:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "wizard",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "wizard:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
