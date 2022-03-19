@@ -13,6 +13,23 @@ If text is selected, then the highlighted text will be included in the print sta
 {"keys": ["ctrl+p"], "command": "ctrlp_print"},
 ```
 
+#### Java param generation shortcut
+If the text highlighted is a java function decleration, it will generate docs using the parameters:
+```java
+  public static String someMethod(int a, float b) {
+```
+If the above text is highlightedm the below text is generated
+```java
+  /**
+   * description
+   *
+   * @param a the int.
+   * @param b the float.
+   * @return String.
+   */
+  public static String someMethod(int a, float b) {
+```
+
 ### Move caret x lines up or down
 `Alt+left`: moves caret x lines up
 `Alt+right`: moves caret x lines down
@@ -135,6 +152,74 @@ In sublime-text 4 they updated the join command, but I like the old one:
 This overrides the sublime "goto" command:
 `ctrl+;`: shortcut for "go to anything"
 
-## Commands
-## Shortcuts
+
+
 ## Snippets
+See the `Packages/User/*.sublime-keymap` files for a variety of custom snippets. Here are a few:
+
+### Java
+
+#### `arraycopy`:
+```java
+System.arraycopy(${1:src[]}, ${2:srcPos}, ${3:dst[]}, ${4:dstPos}, ${5:len});
+```
+
+#### `PrintWriter`:
+```java
+PrintWriter ${1:writer} = null;
+try {
+    ${1} = new PrintWriter(filename);
+} catch (FileNotFoundException e) {
+}
+for (String line : contents) {
+    ${1}.println(line);
+}
+${1}.close();
+```
+
+There are many more, just have a look at 
+`Packages/User/java-*.sublime-keymap`
+
+
+
+### Python
+#### `decorator`:
+```py
+def decorator(function):
+    def wrapper(*args, **kwargs):
+        result = function(*args, **kwargs)
+        return result
+    return wrapper
+```
+
+#### `"""`
+```py
+""" ${1:}
+
+Args:
+    param: type
+        description
+        example:
+
+        {key: val}
+
+Returns:
+    description
+    example:
+
+    {key: val}
+"""
+```
+
+#### `multiprocessing`
+```py
+import concurrent.futures
+with concurrent.futures.ProcessPoolExecutor() as executor:
+    process2key = {}
+    for key in keys:
+        process = executor.submit(func, key2args[key])
+        process2key[process] = key
+    for process in concurrent.futures.as_completed(process2key):
+        result = process.result()
+        key = process2key[process]
+```
