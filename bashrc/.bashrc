@@ -1,8 +1,8 @@
 # activate python environment in this directory or any parent directory (see TODO)
-alias activate='. ~/sandbox/commands/packages/activate-recur/activate-recur.sh'
+alias activate='. ~/sandbox/packages/alias/activate-recur/activate-recur.sh'
 
 # shortcut for ipython3 or python manage.py shell if manage.py is detected
-alias shell='. ~/sandbox/commands/packages/python-shell/python-shell.sh'
+alias shell='. ~/sandbox/packages/alias//python-shell/python-shell.sh'
 
 # django shortcuts
 alias runserver='python manage.py runserver'
@@ -13,7 +13,7 @@ alias lab='python3 manage.py shell_plus --lab'
 alias gs='git status'
 alias ga='git add'
 #alias gc='git commit -m'
-alias gc='python3 ~/sandbox/commands/packages/gg/gg.py'
+alias gc='python3 ~/sandbox/packages/alias/gg/gg.py'
 
 # java (NOTE: sudo apt install skdman)
 alias java15='sdk use java 15.0.0.hs-adpt'
