@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+PrintWriter ${1:writer} = null;
+try {
+	${1/\*//} = new PrintWriter(filename);
+} catch (FileNotFoundException e) {
+}
+for (String line : contents) {
+	${1/\*//}.println(line);
+}
+${1/\*//}.close();
+]]></content>
+	<tabTrigger>PrintWriter</tabTrigger>
+	<scope>source.java</scope>
+</snippet>

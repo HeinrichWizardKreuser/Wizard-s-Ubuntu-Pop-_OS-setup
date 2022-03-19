@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+for index, row in ${1:df}.iterrows():
+	${2}
+]]></content>
+	<tabTrigger>iterrows</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

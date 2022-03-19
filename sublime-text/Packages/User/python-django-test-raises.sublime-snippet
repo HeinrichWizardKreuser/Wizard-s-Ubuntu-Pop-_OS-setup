@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+with self.assertRaises(${1:ValueError}):
+    ${2}
+]]></content>
+    <tabTrigger>assert-raises</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

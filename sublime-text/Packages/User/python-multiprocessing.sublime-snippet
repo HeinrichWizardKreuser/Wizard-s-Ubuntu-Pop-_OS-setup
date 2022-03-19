@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+import concurrent.futures
+with concurrent.futures.ProcessPoolExecutor() as executor:
+    process2key = {}
+    for key in keys:
+        process = executor.submit(func, key2args[key])
+        process2key[process] = key
+    for process in concurrent.futures.as_completed(process2key):
+        result = process.result()
+        key = process2key[process]
+]]></content>
+	<tabTrigger>multiprocessing</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

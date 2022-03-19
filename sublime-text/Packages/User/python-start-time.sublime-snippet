@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+start = time.time()
+print(time.time() - start)
+]]></content>
+    <tabTrigger>start</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

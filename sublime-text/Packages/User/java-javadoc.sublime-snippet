@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * @param 
+ * @return
+ */
+]]></content>
+	<tabTrigger>/**</tabTrigger>
+	<scope>source.java</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+def f(item, previous):
+    return ee.List(previous).add(item)
+object.iterate(f, ee.List([]))
+]]></content>
+	<tabTrigger>iterate</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

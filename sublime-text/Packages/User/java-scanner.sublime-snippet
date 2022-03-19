@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+Scanner ${1:sc} = new Scanner(System.in);
+while (${1/\*//}.hasNextLine()) {
+	String line = ${1/\*//}.nextLine();
+}
+${1/\*//}.close();
+]]></content>
+	<tabTrigger>Scanner</tabTrigger>
+	<scope>source.java</scope>
+</snippet>

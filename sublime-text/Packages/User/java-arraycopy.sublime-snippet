@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+System.arraycopy(${1:src[]}, ${2:srcPos}, ${3:dst[]}, ${4:dstPos}, ${5:len});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>arraycopy</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.java</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+LinkedList<${1:String}> ${3:lis} = new LinkedList<>();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>LL</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.java</scope>
+</snippet>

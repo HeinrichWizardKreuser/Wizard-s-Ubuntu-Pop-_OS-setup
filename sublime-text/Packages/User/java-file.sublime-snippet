@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+ArrayList<String> lis = new ArrayList<>(0);
+Scanner ${1:reader} = null;
+try {
+	${1/\*//} = new Scanner(new File(filename));
+} catch (FileNotFoundException e) {
+	System.out.println("Could not find file " + filename + "!");
+}
+while (${1/\*//}.hasNextLine()) {
+	lis.add(${1/\*//}.nextLine());
+}
+${1/\*//}.close();
+]]></content>
+	<tabTrigger>File</tabTrigger>
+	<scope>source.java</scope>
+</snippet>

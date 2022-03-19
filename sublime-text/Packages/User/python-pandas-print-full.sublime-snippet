@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+with pd.option_context('display.max_rows', None, 'display.max_columns', None):
+    print(${1:df})
+]]></content>
+    <tabTrigger>pandas-print-full</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

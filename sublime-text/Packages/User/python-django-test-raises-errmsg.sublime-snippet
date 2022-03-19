@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+errmsg = "${1:error}"
+with self.assertRaisesMessage(${2:ValueError}, expected_message=errmsg):
+    ${3}
+]]></content>
+    <tabTrigger>with-errmsg</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

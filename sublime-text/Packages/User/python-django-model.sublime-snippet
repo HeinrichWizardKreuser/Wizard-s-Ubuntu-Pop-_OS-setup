@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+class ${1:ModeName}(models.Model):
+    name = models.CharField(
+        max_length=256, 
+        default='')
+]]></content>
+	<tabTrigger>django-model</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

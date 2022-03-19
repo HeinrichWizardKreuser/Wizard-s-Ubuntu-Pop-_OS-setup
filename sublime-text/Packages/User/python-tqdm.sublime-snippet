@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+with tqdm(total=${1}) as pbar:
+    pbar.update(1)
+]]></content>
+    <tabTrigger>pbar</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

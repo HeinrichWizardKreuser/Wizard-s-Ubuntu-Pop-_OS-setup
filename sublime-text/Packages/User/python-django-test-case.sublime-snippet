@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+from django.test import TestCase
+
+class ${1:Class}TestCase(TestCase):
+    
+    def test(self):
+        ${2}
+]]></content>
+    <tabTrigger>TestCase</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

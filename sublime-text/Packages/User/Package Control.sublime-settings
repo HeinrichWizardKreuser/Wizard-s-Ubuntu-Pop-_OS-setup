@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ANTLR syntax highlight",
+		"Dockerfile Syntax Highlighting",
+		"EasyWorkspace",
+		"FileManager",
+		"MarkdownLivePreview",
+		"Monokai++",
+		"Package Control",
+	],
+}
