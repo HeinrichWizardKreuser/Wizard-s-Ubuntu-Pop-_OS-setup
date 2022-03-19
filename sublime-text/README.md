@@ -105,10 +105,35 @@ Here the cursor is to the right of `x`, and pressing `ctrl+right` will highlight
 int x = [someFunc](2)
 ```
 Moving it right again will highlight `2`, but you can move left as well to highlight `x` (after which you can highlight `int`)
-
 This is very useful when say copying a paragraph of code but wanting to change a single part.
 
-### 
+### Swapping the top and bottom text
+`ctrl+up`: move the current line / selection up one line
+`ctrl+down`: move the current line / selection down one line
+
+### Toggle / focus left side bar
+`alt+\`: toggle (hide) or show (if already hidden) the left side bar
+`ctrl+\`: select this file in the left side bar
+
+### Select next/prev mention of selected text
+using `ctrl+shift` and then either on of the `-` or `=` keys (to the left of backspace usually) will cycle through mentions of the selected text
+(if text is selected) `ctrl+shift+-` highlight prev mention of text
+(if text is selected) `ctrl+shift+=` highlight next mention of text
+
+### Re-indent code
+`f12`: reindent selected code (good for fixing bad indents without needing to do it manually)
+
+### Join lines
+In sublime-text 4 they updated the join command, but I like the old one:
+`ctrl+j`: join lines
+
+### Move to next/prev file modification
+`alt+.`: select next file modication
+`alt+,`: select prev file modication
+
+### goto
+This overrides the sublime "goto" command:
+`ctrl+;`: shortcut for "go to anything"
 
 ## Commands
 ## Shortcuts

@@ -5,10 +5,10 @@
     {"keys": ["alt+left"], "command": "move_lines", "args": {"amount": 5 }},
     {"keys": ["alt+right"], "command": "move_lines", "args": {"amount": -5 }},
     // croll up/down with cursor
-    { "keys": ["alt+up"], "command": "scroll_lines", "args": {"amount": 5.0 } },
-    { "keys": ["alt+down"], "command": "scroll_lines", "args": {"amount": -5.0 } },
+    {"keys": ["alt+up"], "command": "scroll_lines", "args": {"amount": 5.0 } },
+    {"keys": ["alt+down"], "command": "scroll_lines", "args": {"amount": -5.0 } },
     // autocorrect
-    { "keys": ["ctrl+k", "ctrl+c"], "command": "cases" },
+    {"keys": ["ctrl+k", "ctrl+c"], "command": "cases" },
     // python multiline comment
     {"keys": ["ctrl+'"], "command": "multiline_comment", "args": {"s": "'''" }},
     {"keys": ["ctrl+shift+'"], "command": "multiline_comment", "args": {"s": "\"\"\"" }},
@@ -27,36 +27,26 @@
     {"keys": ["ctrl+right"], "command": "highlight_move", "args": {"right": true }},
     {"keys": ["ctrl+left"], "command": "highlight_move", "args": {"right": false }},
     // swap lines up or down
-    { "keys": ["ctrl+up"], "command": "swap_line_up" },
-    { "keys": ["ctrl+down"], "command": "swap_line_down" },
+    {"keys": ["ctrl+up"], "command": "swap_line_up" },
+    {"keys": ["ctrl+down"], "command": "swap_line_down" },
     // toggling side bar
-    { "keys": ["alt+\\"], "command": "toggle_side_bar" },
-    { "keys": ["ctrl+\\"], "command": "focus_side_bar" },
-
-
-
+    {"keys": ["alt+\\"], "command": "toggle_side_bar" },
+    {"keys": ["ctrl+\\"], "command": "focus_side_bar" },
+    // find next mention of text
     {"keys": ["ctrl+shift+="], "command": "find_under"},
     {"keys": ["ctrl+shift+-"], "command": "find_under_prev"},
-    { "keys": ["f12"], "command": "reindent"},
-
-    // { "keys": ["ctrl+shift+m"], "command": "expand_selection", "args": {"to": "scope"} },
-    { "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
-
-
-
-
+    // reindent code
+    {"keys": ["f12"], "command": "reindent"},
+    // select next scope
+    {"keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
     // as Nod intended
-    { "keys": ["ctrl+j"], "command": "join_lines" },
-
-
+    {"keys": ["ctrl+j"], "command": "join_lines" },
     // disable
-    { "keys": ["ctrl+."], "command": "pass" },
-    { "keys": ["ctrl+,"], "command": "pass" },
+    {"keys": ["ctrl+."], "command": "pass" },
+    {"keys": ["ctrl+,"], "command": "pass" },
     // move to new binding
-    { "keys": ["alt+."], "command": "next_modification" },
-    { "keys": ["alt+,"], "command": "prev_modification" },
-
+    {"keys": ["alt+."], "command": "next_modification" },
+    {"keys": ["alt+,"], "command": "prev_modification" },
     // override goto anything
-    { "keys": ["ctrl+;"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-
+    {"keys": ["ctrl+;"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 ]
