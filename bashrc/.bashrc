@@ -1,7 +1,7 @@
-# activate python environment in this directory or any parent directory (see TODO)
+# activate python environment in this directory or any parent directory (see https://github.com/HeinrichWizardKreuser/Wizard-s-Ubuntu-Pop-_OS-setup/tree/main/sandbox/packages/alias/activate-recur)
 alias activate='. ~/sandbox/packages/alias/activate-recur/activate-recur.sh'
 
-# shortcut for ipython3 or python manage.py shell if manage.py is detected
+# shortcut for ipython3 or python manage.py shell if manage.py is detected (see https://github.com/HeinrichWizardKreuser/Wizard-s-Ubuntu-Pop-_OS-setup/tree/main/sandbox/packages/alias/python-shell)
 alias shell='. ~/sandbox/packages/alias//python-shell/python-shell.sh'
 
 # django shortcuts
@@ -13,6 +13,7 @@ alias lab='python3 manage.py shell_plus --lab'
 alias gs='git status'
 alias ga='git add'
 #alias gc='git commit -m'
+# shortcut for git commands. (see https://github.com/HeinrichWizardKreuser/Wizard-s-Ubuntu-Pop-_OS-setup/tree/main/sandbox/packages/alias/gg)
 alias gc='python3 ~/sandbox/packages/alias/gg/gg.py'
 
 # java (NOTE: sudo apt install skdman)
