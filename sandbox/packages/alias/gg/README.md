@@ -9,16 +9,15 @@ git commit
 all in one command and uses an algorithm to detect what the user intends to do.
 See examples by running the tests (next section) or viewing the end of the file for examples
 
+## Terminal Shortcut
+Place this in your bash (sensitive to path of this folder)
+```
+alias gc='python3 ~/sandbox/packages/alias/gg/gg.py'
+```
 
 ## Test
 ```
 python testgg.py
-```
-
-## Terminal Shortcut
-Place this in your bash (sensitive to path of this folder)
-```
-alias gc='python3 ~/sandbox/commands/packages/gg/gg.py'
 ```
 
 ## Examples

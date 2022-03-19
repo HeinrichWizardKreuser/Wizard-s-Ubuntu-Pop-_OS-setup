@@ -11,6 +11,7 @@ sudo apt install xsel
 ## Keyboard shortcut
 Settings -> Keyboard -> Customize Shortcuts -> custom shortcuts:
 
+```
 Name:
 google-selected
 
@@ -19,3 +20,4 @@ python3 /home/wizard/sandbox/commands/packages/google-selected/google-search-sel
 
 Shortcut (suggested):
 Ctrl+6
+```

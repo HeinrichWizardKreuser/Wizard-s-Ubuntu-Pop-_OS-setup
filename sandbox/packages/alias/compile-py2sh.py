@@ -50,7 +50,5 @@ def main(argv):
     return f"alias cmd='. ~{filepath}'"
 
 
-
-
 if __name__ == '__main__':
     print(main(sys.argv))
